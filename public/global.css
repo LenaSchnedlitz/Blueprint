@@ -1,0 +1,67 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url('https://www.lenaschnedlitz.me/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    src: url('https://www.lenaschnedlitz.me/fonts/Montserrat/Montserrat-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    src: url('https://www.lenaschnedlitz.me/fonts/Montserrat/Montserrat-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Lora';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://www.lenaschnedlitz.me/fonts/Lora/Lora-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Lora';
+    font-weight: normal;
+    font-style: italic;
+    src: url('https://www.lenaschnedlitz.me/fonts/Lora/Lora-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Lora';
+    font-weight: bold;
+    font-style: italic;
+    src: url('https://www.lenaschnedlitz.me/fonts/Lora/Lora-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Fira Code';
+    font-weight: normal;
+    src: url('https://www.lenaschnedlitz.me/fonts/FiraCode/FiraCode-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Fira Code';
+    font-weight: bold;
+    src: url('https://www.lenaschnedlitz.me/fonts/FiraCode/FiraCode-Bold.woff2') format('woff2');
+}
+
+html {
+    --sans-serif: 'Montserrat', sans-serif;
+    --serif: 'Lora', serif;
+    --monospace: 'Fira Code', monospace;
+
+    font-family: var(--sans-serif);
+    font-size: 16px;
+}
