@@ -1,18 +1,18 @@
 {
   "name": "blueprint",
   "description": "Template Repository for My Projects",
-  "version": "1.0.0",
-  "author": "Lena Schnedlitz",
   "license": "",
+  "author": "Lena Schnedlitz",
+  "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
-    "validate": "svelte-check",
-    "validate:watch": "svelte-check --watch",
-    "prettify": "prettier --write src/**/* public/*.{html,css} *.{config.js,json,yml,md}",
+    "analyse:watch": "svelte-check --watch",
+    "analyse": "svelte-check",
     "lint": "eslint src/**/*",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettify": "prettier --write src/**/* public/*.{html,css} *.{config.js,json,yml,md}"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^19.0.0",

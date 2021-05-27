@@ -43,6 +43,7 @@
     <AppContent bind:initiate />
   </section>
 </main>
+<!-- TODO -->
 <Footer projectLink="https://gitlab.com/LenaSchnedlitz/blueprint" />
 
 <style>

@@ -1,8 +1,8 @@
 {
-  "background_color": "#fefefe",
-  "theme_color": "#6199d0",
   "name": "blueprint",
   "short_name": "blueprint",
+  "theme_color": "#6199d0",
+  "background_color": "#fefefe",
   "display": "minimal-ui",
   "start_url": "/",
   "icons": [
