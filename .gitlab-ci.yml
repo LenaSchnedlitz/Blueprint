@@ -1,8 +1,5 @@
 image: node:latest
 
-include:
-  - template: Code-Quality.gitlab-ci.yml
-
 cache:
   key: the-one-and-only-cache-key
   paths:
@@ -13,20 +10,18 @@ before_script:
   - npm ci --cache .npm --prefer-offline
 
 stages:
-  - test
+  - verify
 #  - deploy  TODO uncomment this
 
 analyse:
-  stage: test
+  stage: verify
   script:
     - npm run analyse
 
 lint:
-  stage: test
+  stage: verify
   script:
     - npm run analyse
-  except:
-    - master
 # TODO uncomment this
 # deploy:
 #   stage: deploy
