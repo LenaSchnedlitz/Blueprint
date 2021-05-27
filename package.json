@@ -11,7 +11,8 @@
     "validate": "svelte-check",
     "validate:watch": "svelte-check --watch",
     "prettify": "prettier --write src/**/* public/*.{html,css} *.{config.js,json,yml,md}",
-    "lint": "eslint src/**/*"
+    "lint": "eslint src/**/*",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^19.0.0",
@@ -22,8 +23,10 @@
     "@typescript-eslint/parser": "^4.25.0",
     "eslint": "^7.27.0",
     "eslint-plugin-svelte3": "^3.2.0",
+    "husky": "^6.0.0",
     "prettier": "^2.3.0",
     "prettier-plugin-svelte": "^2.3.0",
+    "pretty-quick": "^3.1.0",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
