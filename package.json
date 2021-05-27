@@ -3,7 +3,7 @@
   "description": "Template Repository for My Projects",
   "version": "1.0.0",
   "author": "Lena Schnedlitz",
-  "license": "MIT",
+  "license": "",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
