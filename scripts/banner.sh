@@ -1,3 +1,5 @@
+# source: https://github.com/LenaSchnedlitz/ASCII-Banner
+
 echo "
 \e[0;33m◌                                                                                                  \e[0;33m◌
 \e[0;33m◌                                           \e[1;31m·-===))===-·\e[0m                                           \e[0;34m◌
