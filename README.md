@@ -19,7 +19,9 @@ npm run analyse:watch
 
 ---
 
-## Customization
+## Details
+
+### Customization
 
 Adapt the following files:
 
@@ -29,18 +31,18 @@ Adapt the following files:
 - [ ] `/public` pics - _Don't forget to optimize!_
 - [ ] `src/App.svelte` - see TODOs
 
-## Development
-
-**Notes:**
+### Development
 
 - Start developing in `src/AppContent.svelte`.
 - **Check code** (manual + GitLab pipeline):
-  _ `npm run analyse`
-  _ `npm run eslint`
+  - `npm run analyse`
+  - `npm run eslint`
 - **Format:** Files are prettified automatically (via pre-commit hook).
 
 ### Deployment
 
 - [ ] Set up GitHub repo
 - [ ] Uncomment lines in `.gitlab-ci.yml` - _see TODO_
-- [ ] Add variables to CI/CD config on GitLab: - [ ] `DEPLOY_REPO` - [ ] `DEPLOY_TOKEN` - _masked!_
+- [ ] Add variables to CI/CD config on GitLab:
+  - [ ] `DEPLOY_REPO`
+  - [ ] `DEPLOY_TOKEN` - _masked!_
