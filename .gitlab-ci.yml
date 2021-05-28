@@ -7,8 +7,10 @@ cache:
     - node_modules
 
 before_script:
-  - sh ./scripts/banner.sh
   - npm ci --cache .npm --prefer-offline
+
+after_script:
+  - sh ./scripts/banner.sh
 
 stages:
   - verify
