@@ -6,6 +6,7 @@
 npx degit LenaSchnedlitz/blueprint my-project
 cd my-project
 npm install
+npm run setup
 npm run dev
 ```
 
@@ -25,10 +26,7 @@ npm run analyse:watch
 
 Adapt the following files:
 
-- [ ] `package.json` - lines 2-4
-- [ ] `public/manifest.json` - lines 2-4
-- [ ] `public/index.html` - see TODOs
-- [ ] `/public` pics - _Don't forget to optimize!_
+- [ ] `/public` all pics - _Don't forget to optimize!_
 - [ ] `src/App.svelte` - see TODOs
 
 ### Development

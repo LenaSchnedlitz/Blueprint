@@ -20,7 +20,7 @@
   <section class="landing">
     <Title>
       <Logo />
-      Blueprint <!-- TODO -->
+      $TITLE
     </Title>
     <section class="intro">
       <Tagline>
@@ -43,8 +43,7 @@
     <AppContent bind:initiate />
   </section>
 </main>
-<!-- TODO -->
-<Footer projectLink="https://gitlab.com/LenaSchnedlitz/blueprint" />
+<Footer author="$AUTHOR" projectLink="$LINK" />
 
 <style>
   main {

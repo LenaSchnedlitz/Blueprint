@@ -1,7 +1,7 @@
 {
-  "name": "blueprint",
-  "short_name": "blueprint",
-  "theme_color": "#6199d0",
+  "name": "$TITLE",
+  "short_name": "$TITLE",
+  "theme_color": "$COLOR",
   "background_color": "#fefefe",
   "display": "minimal-ui",
   "start_url": "/",
