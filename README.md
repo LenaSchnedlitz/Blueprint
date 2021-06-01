@@ -10,7 +10,7 @@ npm run setup
 npm run dev
 ```
 
-For static code analysis, also run (in another tab)
+For static code analysis, also run (in another tab):
 
 ```shell
 npm run analyse:watch
@@ -27,11 +27,13 @@ npm run analyse:watch
 Adapt the following files:
 
 - [ ] `/public` all pics - _Don't forget to optimize!_
+- [ ] `/src/core/Logo.svelte`
 - [ ] `src/App.svelte` - see TODOs
 
 ### Development
 
 - Start developing in `src/AppContent.svelte`.
+- Most places that need editing are marked with `TODO`.
 - **Check code** (manual + GitLab pipeline):
   - `npm run analyse`
   - `npm run eslint`
