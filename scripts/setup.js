@@ -79,7 +79,7 @@ const askQuestions = () => {
       name: 'COLOR',
       type: 'input',
       prefix,
-      validate: required,
+      validate: (input) => required(input) && !!input.match(/#([a-f0-9]{3}){1,2}/),
     },
     {
       message:
