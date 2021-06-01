@@ -20,7 +20,7 @@
   <section class="landing">
     <Title>
       <Logo />
-      $TITLE
+      _TITLE_
     </Title>
     <section class="intro">
       <Tagline>
@@ -43,7 +43,7 @@
     <AppContent bind:initiate />
   </section>
 </main>
-<Footer author="$AUTHOR" projectLink="$LINK" />
+<Footer author="_AUTHOR_" projectLink="_LINK_" />
 
 <style>
   main {

@@ -1,7 +1,7 @@
 {
-  "name": "$TITLE",
-  "short_name": "$TITLE",
-  "theme_color": "$COLOR",
+  "name": "_TITLE_",
+  "short_name": "_TITLE_",
+  "theme_color": "_COLOR_",
   "background_color": "#fefefe",
   "display": "minimal-ui",
   "start_url": "/",

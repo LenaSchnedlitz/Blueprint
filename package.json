@@ -1,7 +1,7 @@
 {
-  "name": "$TITLE",
-  "description": "$DESCRIPTION",
-  "author": "$AUTHOR",
+  "name": "_TITLE_",
+  "description": "_DESCRIPTION_",
+  "author": "_AUTHOR_",
   "version": "1.0.0",
   "scripts": {
     "setup": "node ./scripts/setup.js",

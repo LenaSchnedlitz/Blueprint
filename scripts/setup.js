@@ -110,7 +110,7 @@ const addLicense = () => {
 
 const fillIn = (data) => {
   Object.keys(data).forEach((key) => {
-    const replacePattern = new RegExp(`\\$${key}`, 'g');
+    const replacePattern = new RegExp(`_${key}_`, 'g');
     FILES_TO_FILL_IN.forEach((file) => shell.sed('-i', replacePattern, data[key], file));
   });
 };
