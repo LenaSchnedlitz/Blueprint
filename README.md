@@ -16,7 +16,7 @@ For static code analysis, also run (in another tab):
 npm run analyse:watch
 ```
 
-:bicyclist:
+:metro:
 
 ---
 
