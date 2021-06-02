@@ -112,6 +112,7 @@ const suggestComplementaryColor = (color) => {
     {
       '#bf5594': '#ee3377',
       '#ee3377': '#f37e5b',
+      '#e37': '#f37e5b',
       '#f05869': '#f9c940',
       '#f37e5b': '#f9c940',
       '#f6a34d': '#f37e5b',
@@ -120,6 +121,7 @@ const suggestComplementaryColor = (color) => {
       '#96c297': '#33bbee',
       '#64bec2': '#5199e0', // '#6199d0'
       '#33bbee': '#5199e0', // '#6199d0'
+      '#3be': '#5199e0', // '#6199d0'
       '#6199d0': '#33bbee',
       '#9077b2': '#47d8df', // '#64bec2'
     }[color] || '#ee3377'

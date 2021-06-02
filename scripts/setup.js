@@ -4,7 +4,7 @@ const path = require('path');
 const shell = require('shelljs');
 const utils = require('./color-utils.js');
 
-// TODO: remove this file and run `npm remove chalk inquirer shelljs`
+// TODO remove this file and run `npm remove chalk inquirer shelljs`
 
 const SATURATION_THRESHOLD = 0.7;
 
@@ -51,6 +51,7 @@ const askQuestions = () => {
       name: 'TITLE',
       type: 'input',
       default: slug,
+      filter: (input) => input.replace(/ /g, '-'),
       prefix,
     },
     {

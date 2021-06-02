@@ -1,5 +1,3 @@
-# https://github.com/LenaSchnedlitz/ASCII-Banner
-
 echo "\e[0;95m
 ┌─────────────────────────┐
 │\e[1;95m                         \e[0;95m│
