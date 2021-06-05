@@ -25,7 +25,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow: hidden auto;
-  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
 
   background: var(--gray-1);
 
@@ -38,28 +38,4 @@ body {
   background: var(--secondary-color);
   color: var(--gray-1);
   -webkit-text-fill-color: var(--gray-1);
-}
-
-/* HELPERS */
-
-.global--aria {
-  width: 0;
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-}
-
-.global--big-screen-only {
-  display: none;
-}
-
-@media all and (min-width: 900px) {
-  .global--small-screen-only {
-    display: none;
-  }
-
-  .global--big-screen-only {
-    display: initial;
-  }
 }
