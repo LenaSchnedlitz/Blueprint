@@ -1,7 +1,7 @@
 <script lang="ts">
   import Button from './components/Button.svelte';
   import Icon from './components/Icon.svelte';
-  import Appear from './core/Appear.svelte';
+  import Appear from './components/helpers/Appear.svelte';
 
   let finishHidden = true;
 

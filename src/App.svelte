@@ -40,6 +40,10 @@
     <Scroller>Get started</Scroller>
   </section>
   <section class="content">
+    <Title>
+      <Logo />
+      _TITLE_
+    </Title>
     <AppContent bind:initiate />
   </section>
 </main>
@@ -53,7 +57,6 @@
   .landing {
     position: relative;
     height: 100vh;
-    scroll-snap-align: start;
     background: linear-gradient(to top right, var(--primary-color-2), var(--primary-color-1));
 
     /* TODO background pattern - uncomment/replace/edit however you like
@@ -81,6 +84,6 @@
 
   .content {
     position: relative;
-    scroll-snap-align: start;
+    min-height: 100vh;
   }
 </style>

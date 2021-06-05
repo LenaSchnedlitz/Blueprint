@@ -7,12 +7,13 @@
 <style>
   svg {
     position: absolute;
-    fill: var(--primary-color-2);
-    animation: rotate 30s ease-in 0s infinite;
+    top: -100vh;
+    left: -80%;
     width: 200%;
     height: 200%;
-    left: -90%;
-    top: -80vh;
+    fill: var(--primary-color-2);
+    animation: rotate 30s ease-in 0s infinite;
+    pointer-events: none;
   }
 
   @keyframes rotate {
@@ -21,6 +22,12 @@
     }
     to {
       transform: rotate(360deg);
+    }
+  }
+
+  @media all and (min-width: 900px) {
+    svg {
+      top: -90vh;
     }
   }
 </style>

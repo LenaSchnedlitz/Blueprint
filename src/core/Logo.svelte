@@ -1,14 +1,5 @@
-<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="none">
-  <defs>
-    <linearGradient id="gradient" x1="256" x2="768" y2="1024" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#fff" stop-opacity="1" offset="0" />
-      <stop stop-color="#fff" stop-opacity="0" offset="1" />
-    </linearGradient>
-  </defs>
-  <g stroke="#fff" stroke-width="8">
-    <ellipse cx="512" cy="512" rx="496" ry="496" fill="#6199d0" />
-    <ellipse cx="512" cy="512" rx="496" ry="496" fill="url(#gradient)" opacity="0.5" />
-  </g>
+<svg viewBox="0 0 1024 1024" width="1024" height="1024" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="none">
+  <ellipse cx="512" cy="512" rx="496" ry="496" fill="#000" stroke="#fff" stroke-width="8" />
   <circle stroke="#fff" stroke-width="4" cx="512" cy="512" r="461.14" />
   <g fill="#fff">
     <path

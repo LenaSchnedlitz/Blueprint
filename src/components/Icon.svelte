@@ -9,14 +9,14 @@
 
 <style>
   svg {
+    position: relative;
+    width: 0.9em;
+    height: 0.9em;
+    bottom: calc(var(--line-height) - 24px);
     fill: none;
     stroke: currentColor;
     stroke-width: 2px;
     stroke-linecap: round;
-    width: 0.9em;
-    height: 0.9em;
-    position: relative;
-    bottom: calc(var(--line-height) - 24px);
   }
 
   .fat {
