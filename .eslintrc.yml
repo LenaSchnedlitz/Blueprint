@@ -18,3 +18,4 @@ settings:
   'svelte3/typescript': true
 rules:
   '@typescript-eslint/no-empty-function': off # empty functions are used as fallback
+  '@typescript-eslint/no-explicit-any': off # will be removed when svelte-check typing is more consistent

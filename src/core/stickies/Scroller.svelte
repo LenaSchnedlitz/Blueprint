@@ -22,19 +22,19 @@
     button {
       position: absolute;
       display: initial;
-      bottom: calc(var(--frame) - 1rem);
       right: var(--frame);
+      bottom: calc(var(--frame) - 1rem);
       transform: rotate(90deg);
       transform-origin: top right;
       padding: 0;
+
+      background: transparent;
+      border: none;
 
       color: var(--primary-color-8);
       font-family: var(--monospace);
       font-size: var(--font-size);
       font-weight: 700;
-
-      background: transparent;
-      border: none;
 
       cursor: pointer;
       outline: none;
@@ -50,9 +50,9 @@
     }
 
     button:focus-visible {
-      color: var(--secondary-color-3);
       word-spacing: 0.5rem;
       padding-right: 0.5rem;
+      color: var(--secondary-color);
     }
   }
 </style>

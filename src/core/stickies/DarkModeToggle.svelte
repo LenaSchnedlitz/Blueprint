@@ -1,6 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import Icon from '../../components/Icon.svelte';
+  import Aria from '../../components/helpers/Aria.svelte';
+  import BigScreenOnly from '../../components/helpers/BigScreenOnly.svelte';
 
   const STORAGE_KEY = 'theme';
   const DARK_PREFERENCE = '(prefers-color-scheme: dark)';
@@ -49,8 +51,8 @@
 </script>
 
 <label>
-  <span class="global--aria">Light Mode</span>
-  <span class="global--big-screen-only" aria-hidden="true">{THEMES.DARK}</span>
+  <Aria>Light Mode</Aria>
+  <BigScreenOnly ariaHidden="true">{THEMES.DARK}</BigScreenOnly>
   <input type="checkbox" checked={currentTheme !== THEMES.DARK} on:click={toggleTheme} />
   <span class="toggle">
     <span class="toggleIcons">
@@ -58,7 +60,7 @@
       <Icon name="sun" />
     </span>
   </span>
-  <span class="global--big-screen-only" aria-hidden="true">{THEMES.LIGHT}</span>
+  <BigScreenOnly ariaHidden="true">{THEMES.LIGHT}</BigScreenOnly>
 </label>
 
 <style>
@@ -94,9 +96,9 @@
 
   input {
     position: absolute;
-    opacity: 0;
     width: 0;
     height: 0;
+    opacity: 0;
     overflow: hidden;
   }
 
@@ -108,10 +110,10 @@
     margin: 0 0.5em;
 
     background: var(--primary-color-3);
+    color: var(--primary-color-3);
 
     border-radius: var(--toggle-height);
     cursor: pointer;
-    color: var(--primary-color-3);
   }
 
   .toggle::after {
@@ -120,12 +122,12 @@
     left: 1px;
     width: calc(var(--toggle-height) - 2px);
     height: calc(var(--toggle-height) - 2px);
-    border-radius: var(--toggle-height);
-    content: '';
 
     background: var(--gray-9);
     box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.2);
 
+    border-radius: var(--toggle-height);
+    content: '';
     transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
@@ -136,11 +138,11 @@
 
   .toggleIcons {
     position: absolute;
-    z-index: 1;
+    top: 2px;
+    left: 4px;
     width: calc(100% - 7px);
     height: calc(100% - 6px);
-    left: 4px;
-    top: 2px;
+    z-index: 1;
 
     display: flex;
     justify-content: space-between;
@@ -155,7 +157,7 @@
     }
 
     label:focus-within .toggle {
-      background: var(--secondary-color-3);
+      background: var(--secondary-color);
     }
   }
 </style>
