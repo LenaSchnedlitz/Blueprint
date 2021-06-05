@@ -37,7 +37,8 @@ Adapt the following files:
 - **Check code** (manual + GitLab pipeline):
   - `npm run analyse`
   - `npm run eslint`
-- **Format:** Files are prettified automatically (via pre-commit hook).
+- **Format:** Files are prettified automatically (via pre-commit hook).  
+  _You need to run `npx husky-init` before you commit for the first time!_
 
 ### Deployment
 
