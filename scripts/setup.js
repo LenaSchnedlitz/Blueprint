@@ -18,6 +18,7 @@ const FILES_TO_FILL_IN = [
   PACKAGE_JSON,
   path.join(process.cwd(), 'public', 'index.html'),
   path.join(process.cwd(), 'public', 'manifest.json'),
+  path.join(process.cwd(), 'public', 'README.md'),
   path.join(process.cwd(), 'src', 'App.svelte'),
 ];
 
