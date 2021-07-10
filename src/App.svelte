@@ -7,6 +7,7 @@
   import Title from './core/Title.svelte';
   import DarkModeToggle from './core/stickies/DarkModeToggle.svelte';
   import Scroller from './core/stickies/Scroller.svelte';
+  import { onMount } from 'svelte';
 
   let initiate: () => void;
 
@@ -14,6 +15,15 @@
     initiate();
     document.body.scrollTo(0, window.innerHeight);
   };
+
+  onMount(() => {
+    // workaround for 100vh problem in iOS safari
+    const setFullHeight = () => {
+      document.documentElement.style.setProperty('--full-height', `${window.innerHeight}px`);
+    };
+    window.addEventListener('resize', setFullHeight);
+    setFullHeight();
+  });
 </script>
 
 <main>
@@ -57,8 +67,9 @@
 
   .landing {
     position: relative;
-    height: 100vh;
+    height: var(--full-height);
     background: linear-gradient(to top right, var(--primary-color-2), var(--primary-color-1));
+    overflow: hidden;
 
     /* TODO background pattern - uncomment/replace/edit however you like
     background-color: var(--primary-color-1);
@@ -85,6 +96,6 @@
 
   .content {
     position: relative;
-    min-height: 100vh;
+    min-height: var(--full-height);
   }
 </style>
