@@ -35,6 +35,7 @@
         <BackgroundBlurredBlob/>
         <BackgroundBlob/>
         <BackgroundLines/>
+        <BackgroundRubberBand/>
     -->
     <DarkModeToggle />
     <Scroller>Get started</Scroller>
